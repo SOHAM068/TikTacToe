@@ -116,18 +116,19 @@ export default function App(): JSX.Element {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f5f5f5', // Change to your desired background color
+  },
   playerInfo: {
     height: 56,
-
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-
     borderRadius: 4,
     paddingVertical: 8,
     marginVertical: 12,
     marginHorizontal: 14,
-
     shadowOffset: {
       width: 1,
       height: 1,
@@ -149,20 +150,21 @@ const styles = StyleSheet.create({
   },
   grid: {
     margin: 12,
+    marginLeft: 44,
   },
   card: {
     height: 100,
-    width: '33.33%',
-    flex:1,
+    width: 100,
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 1,
     borderColor: '#333',
+    borderRadius: 8, // Add border radius
+    margin: 4,
   },
   winnerInfo: {
     borderRadius: 8,
     backgroundColor: '#38CC77',
-
     shadowOpacity: 0.1,
   },
   winnerTxt: {
@@ -173,15 +175,23 @@ const styles = StyleSheet.create({
   },
   gameBtn: {
     alignItems: 'center',
-
-    padding: 10,
+    justifyContent: 'center',
+    padding: 12,
     borderRadius: 8,
     marginHorizontal: 36,
     backgroundColor: '#8D3DAF',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.27,
+    shadowRadius: 4.65,
+    elevation: 6,
   },
   gameBtnText: {
-    fontSize: 18,
+    fontSize: 20,
     color: '#FFFFFF',
-    fontWeight: '500',
+    fontWeight: '600',
   },
 })
